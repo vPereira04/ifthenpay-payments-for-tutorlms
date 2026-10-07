@@ -1,0 +1,66 @@
+/**
+ * The ifthenpay row on Tutor's checkout: square brand icon + name, a divider, then the enabled method logos.
+ * Selectors carry Tutor's own row classes so they outrank its `img { max-width: 24px }` rule
+ * without !important.
+ */
+
+.tutor-checkout-payment-item .tutor-payment-item-content .iftp-tutor-checkout {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px 10px;
+	min-height: 24px;
+	min-width: 0;
+}
+
+.tutor-checkout-payment-item .tutor-payment-item-content .iftp-tutor-checkout__brand-group {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+/* The brand mark is square (555x555); same 24px box Tutor gives its own row icons. */
+.tutor-checkout-payment-item .tutor-payment-item-content img.iftp-tutor-checkout__brand {
+	flex-shrink: 0;
+	width: 24px;
+	max-width: 24px;
+	height: 24px;
+	object-fit: contain;
+}
+
+.tutor-checkout-payment-item .tutor-payment-item-content .iftp-tutor-checkout__divider {
+	align-self: center;
+    width: 2px;
+    height: 20px;
+    background-color: #5c88b2;
+}
+
+.tutor-checkout-payment-item .tutor-payment-item-content .iftp-tutor-checkout__methods {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px;
+}
+
+.tutor-checkout-payment-item .tutor-payment-item-content img.iftp-tutor-checkout__method {
+	width: auto;
+	max-width: 52px;
+	height: 20px;
+	object-fit: contain;
+}
+
+.iftp-tutor-checkout__method-name {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+/* Narrow screens: the method logos drop under the brand, so the divider would point at nothing. */
+@media (max-width: 480px) {
+	.tutor-checkout-payment-item .tutor-payment-item-content .iftp-tutor-checkout__divider {
+		display: none;
+	}
+
+	.tutor-checkout-payment-item .tutor-payment-item-content .iftp-tutor-checkout__methods {
+		flex-basis: 100%;
+	}
+}
