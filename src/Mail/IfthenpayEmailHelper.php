@@ -38,7 +38,7 @@ final class IfthenpayEmailHelper {
 	 *                                    `site_name`, `wp_version`, `tutor_version`,
 	 *                                    `plugin_version`.
 	 *
-	 * @return bool Whether `wp_mail()` accepted the message for sending.
+	 * @return bool Whether WordPress accepted the message for sending.
 	 */
 	public static function send_activation_email( array $data ): bool {
 		$entity    = strtoupper( sanitize_text_field( $data['entity'] ?? '' ) );

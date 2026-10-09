@@ -27,3 +27,11 @@ composer dump-autoload -o
 ```
 
 Version 1.0.0, PHP 7.4+. See `readme.txt` for the WordPress.org description and External Services, and `SECURITY.md` for reporting vulnerabilities.
+
+## Changelog
+
+Releases that fix a security issue say so in their entry, prefixed with **Security:**.
+
+### 1.0.0
+
+- Initial release: ifthenpay Pay by Link gateway for Tutor LMS's native checkout, callback-confirmed orders, live payment methods table with activation requests.

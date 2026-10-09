@@ -11,7 +11,6 @@ namespace Ifthenpay\TutorLMS\Gateway;
 
 use Ifthenpay\TutorLMS\Plugin;
 use Ifthenpay\TutorLMS\Settings\SettingsRepository;
-use Ollyo\PaymentHub\Contracts\Payment\ConfigContract;
 use Ollyo\PaymentHub\Core\Payment\BaseConfig;
 use Tutor\PaymentGateways\Configs\PaymentUrlsTrait;
 
@@ -23,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Hands PaymentHub Tutor's own success/cancel URLs (PaymentUrlsTrait), which already carry the
  * order id by the time checkout builds us. Our own settings live in SettingsRepository.
  */
-final class IfthenpayConfig extends BaseConfig implements ConfigContract {
+final class IfthenpayConfig extends BaseConfig {
 
 	use PaymentUrlsTrait;
 
