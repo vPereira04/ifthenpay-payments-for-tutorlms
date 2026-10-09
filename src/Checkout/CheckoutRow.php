@@ -82,7 +82,6 @@ final class CheckoutRow {
 			<span class="iftp-tutor-checkout">
 				<span class="iftp-tutor-checkout__brand-group">
 					<img class="iftp-tutor-checkout__brand" src="<?php echo esc_url( IFTP_TUTOR_URL . 'assets/img/icon-normal.svg' ); ?>" alt="" width="24" height="24" />
-					<span class="iftp-tutor-checkout__name"><?php esc_html_e( 'ifthenpay', 'ifthenpay-payments-for-tutorlms' ); ?></span>
 				</span>
 				<?php if ( array() !== $methods ) : ?>
 					<span class="iftp-tutor-checkout__divider" aria-hidden="true"></span>

@@ -268,12 +268,18 @@ final class IfthenpayPayment extends BasePayment {
 	}
 
 	/**
-	 * Whether a host is ifthenpay's (or a subdomain of it).
+	 * Whether a host is ifthenpay's (or a subdomain of it). Pay by Links come back on pinpay.pt.
 	 *
 	 * @param string $host The host to check.
 	 */
 	private static function is_ifthenpay_host( string $host ): bool {
-		return 'ifthenpay.com' === $host || '.ifthenpay.com' === substr( $host, -14 );
+		foreach ( array( 'ifthenpay.com', 'pinpay.pt' ) as $domain ) {
+			if ( $domain === $host || str_ends_with( $host, '.' . $domain ) ) {
+				return true;
+			}
+		}
+
+		return false;
 	}
 
 	/**
