@@ -19,10 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 final class IfthenpayEmailHelper {
 
-	const SUPPORT_EMAIL = 'v.pereira.contacto@gmail.com';
-	// phpcs:disable Squiz.PHP.CommentedOutCode.Found, Squiz.Commenting.InlineComment.InvalidEndChar -- the live address stays parked here until ifthenpay switches it on.
-	// const SUPPORT_EMAIL = 'suporte@ifthenpay.com';
-	// phpcs:enable Squiz.PHP.CommentedOutCode.Found, Squiz.Commenting.InlineComment.InvalidEndChar
+	const SUPPORT_EMAIL = 'suporte@ifthenpay.com';
 
 	/**
 	 * Static-only helper; not meant to be instantiated.
