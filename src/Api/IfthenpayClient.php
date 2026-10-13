@@ -19,8 +19,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 final class IfthenpayClient {
 
 	private const API_BASE     = 'https://api.ifthenpay.com';
-	private const GATEWAY_TYPE = 'TutorLMS';
-	private const CALLBACK_CMS = 'TutorLMS';
+	private const GATEWAY_TYPE = 'forminator';
+	private const CALLBACK_CMS = 'forminator';
 
 	// Switching Gateway Keys back and forth re-reads the same rows; a short window keeps that to one call.
 	public const GATEWAY_ROWS_TRANSIENT = 'iftp_tutor_gateway_rows';

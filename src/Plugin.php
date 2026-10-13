@@ -18,6 +18,7 @@ use Ifthenpay\TutorLMS\Checkout\CheckoutRow;
 use Ifthenpay\TutorLMS\Gateway\IfthenpayConfig;
 use Ifthenpay\TutorLMS\Gateway\IfthenpayGateway;
 use Ifthenpay\TutorLMS\Orders\OrderDisplay;
+use Ifthenpay\TutorLMS\Orders\RefundGuard;
 use Ifthenpay\TutorLMS\Settings\SettingsRepository;
 use Ifthenpay\TutorLMS\Sync\GatewaySync;
 use Ifthenpay\TutorLMS\Webhook\CallbackRegistrar;
@@ -85,6 +86,7 @@ final class Plugin {
 			$panel     = new SettingsPanel( $settings, $sync );
 
 			( new PaymentCard() )->register();
+			( new RefundGuard() )->register();
 			$panel->register();
 			( new Controller( $settings, $sync, $panel ) )->register();
 			( new Notices( $settings, $registrar ) )->register();

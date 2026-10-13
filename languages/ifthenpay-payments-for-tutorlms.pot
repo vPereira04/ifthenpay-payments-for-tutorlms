@@ -1,0 +1,365 @@
+# Copyright (C) 2026 ifthenpay
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ifthenpay | Payments for Tutor LMS 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ifthenpay-payments-for-tutorlms\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-12T14:45:39+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: ifthenpay-payments-for-tutorlms\n"
+
+#. Plugin Name of the plugin
+#: ifthenpay-payments-for-tutorlms.php
+msgid "ifthenpay | Payments for Tutor LMS"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: ifthenpay-payments-for-tutorlms.php
+msgid "https://ifthenpay.com"
+msgstr ""
+
+#. Description of the plugin
+#: ifthenpay-payments-for-tutorlms.php
+msgid "Adds ifthenpay (card, Apple Pay, Google Pay, Cofidis, Pix, Multibanco, MB WAY) to Tutor LMS's native checkout via Pay by Link, with orders confirmed by ifthenpay's callback."
+msgstr ""
+
+#. Author of the plugin
+#: ifthenpay-payments-for-tutorlms.php
+#: src/Admin/PaymentCard.php:48
+#: src/Orders/OrderDisplay.php:52
+msgid "ifthenpay"
+msgstr ""
+
+#: ifthenpay-payments-for-tutorlms.php:44
+msgid "ifthenpay | Payments for Tutor LMS needs Tutor LMS 3.0 or newer installed and active."
+msgstr ""
+
+#: ifthenpay-payments-for-tutorlms.php:57
+msgid "ifthenpay | Payments for Tutor LMS could not load its classes. Run \"composer install\" in the plugin folder."
+msgstr ""
+
+#. translators: %s: the store currency code, e.g. USD.
+#: src/Admin/Notices.php:83
+#, php-format
+msgid "ifthenpay only takes payments in euros, and your Tutor LMS currency is %s, so ifthenpay is hidden at checkout. Switch the currency to EUR to offer it."
+msgstr ""
+
+#: src/Admin/Notices.php:95
+msgid "ifthenpay could not register this site's callback URL yet, so paid orders won't be confirmed automatically. This page retries it at most every 15 minutes; contact ifthenpay support if it keeps failing."
+msgstr ""
+
+#: src/Admin/PaymentCard.php:58
+msgid "Callback URL (registered with ifthenpay automatically)"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:108
+msgid "ifthenpay stays hidden at checkout until a Gateway Key is chosen and at least one payment method is enabled."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:109
+msgid "Connecting…"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:110
+#: src/Admin/SettingsPanel.php:217
+#: src/Admin/SettingsPanel.php:390
+msgid "Connect"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:111
+msgid "Please enter your Backoffice Key."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:112
+msgid "Disconnect ifthenpay? This clears the Backoffice Key, Gateway Key and payment methods saved here."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:113
+msgid "Saving…"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:114
+msgid "All changes saved."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:115
+msgid "Your ifthenpay changes could not be saved. Check your connection and try again."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:116
+msgid "Your ifthenpay changes are still being saved."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:117
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:118
+msgid "Requesting…"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:119
+#: src/Admin/SettingsPanel.php:355
+msgid "Requested"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:120
+msgid "Activation request sent. ifthenpay will get back to you shortly."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:121
+#: src/Ajax/Controller.php:178
+msgid "The activation request could not be sent. Please try again."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:154
+#: src/Admin/SettingsPanel.php:383
+msgid "Backoffice Key"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:155
+msgid "Connect your ifthenpay account to load your Gateway Keys and payment methods."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:164
+msgid "Gateway Key"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:168
+msgid "The ifthenpay Gateway Key for Tutor LMS. Changing it reloads the methods below."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:172
+msgid "Payment methods"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:180
+msgid "Payment description"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:182
+msgid "Shown to the customer on the ifthenpay payment page. Empty uses your site name."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:185
+msgid "Expiry days"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:187
+msgid "Days an unpaid payment link stays valid."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:208
+msgid "Connected"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:210
+msgid "Disconnect"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:216
+msgid "Not connected"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:234
+msgid "No Tutor LMS Gateway Key found. Ask ifthenpay to create one."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:238
+msgid "Choose a Gateway Key"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:258
+msgid "Choose a Gateway Key to see its payment methods."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:262
+msgid "No payment methods found for this Gateway Key."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:272
+msgid "Enabled"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:273
+msgid "Default Method"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:274
+msgid "Method"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:275
+msgid "Account"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:284
+msgid "Click the star next to an enabled method to pre-select it on the ifthenpay payment page."
+msgstr ""
+
+#. translators: %s: payment method name.
+#: src/Admin/SettingsPanel.php:313
+#, php-format
+msgid "Enable %s"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:331
+msgid "Set as default payment method"
+msgstr ""
+
+#. translators: %s: payment method name.
+#: src/Admin/SettingsPanel.php:333
+#, php-format
+msgid "Make %s the default payment method"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:353
+msgid "Not activated"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:355
+msgid "Request Activation"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:376
+msgid "Connect to ifthenpay"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:378
+msgid "Close"
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:385
+msgid "The 16-digit key from your ifthenpay Backoffice account."
+msgstr ""
+
+#: src/Admin/SettingsPanel.php:389
+msgid "Cancel"
+msgstr ""
+
+#: src/Ajax/Controller.php:84
+msgid "That doesn't look like a Backoffice Key. It has the format 0000-0000-0000-0000."
+msgstr ""
+
+#: src/Ajax/Controller.php:88
+msgid "ifthenpay didn't return any Tutor LMS Gateway Key for this Backoffice Key. Check the key, or ask ifthenpay to create a Tutor LMS Gateway Key."
+msgstr ""
+
+#: src/Ajax/Controller.php:115
+msgid "That Gateway Key isn't available for your Backoffice Key anymore. Reload the page and try again."
+msgstr ""
+
+#: src/Ajax/Controller.php:156
+msgid "Choose a Gateway Key and a payment method first."
+msgstr ""
+
+#: src/Ajax/Controller.php:160
+msgid "Activation for this method was already requested. Please wait 24 hours before asking again."
+msgstr ""
+
+#: src/Ajax/Controller.php:208
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: src/Ajax/Controller.php:217
+msgid "Connect your Backoffice Key first."
+msgstr ""
+
+#. translators: Tutor passes this through a URL, which drops apostrophes and cuts at "#".
+#: src/Gateway/IfthenpayPayment.php:79
+msgid "ifthenpay only accepts payments in euros (EUR). Please choose another payment method."
+msgstr ""
+
+#: src/Gateway/IfthenpayPayment.php:92
+msgid "ifthenpay couldn't create the payment link: no payment method is enabled in the ifthenpay settings."
+msgstr ""
+
+#. translators: %s: the error ifthenpay (or the connection) returned.
+#: src/Gateway/IfthenpayPayment.php:128
+#, php-format
+msgid "ifthenpay couldn't create the payment link: %s"
+msgstr ""
+
+#. translators: 1: amount in euros, 2: expiry date.
+#: src/Gateway/IfthenpayPayment.php:149
+#, php-format
+msgid "ifthenpay payment link created for %1$s EUR. It expires on %2$s."
+msgstr ""
+
+#. translators: 1: amount ifthenpay reported, 2: amount the payment link was for.
+#: src/Gateway/IfthenpayPayment.php:210
+#, php-format
+msgid "ifthenpay reported a payment of %1$s EUR, but the payment link was for %2$s EUR. The order was not marked as paid."
+msgstr ""
+
+#. translators: 1: payment method, e.g. "MB WAY", 2: ifthenpay request id.
+#: src/Gateway/IfthenpayPayment.php:223
+#, php-format
+msgid "Payment confirmed by ifthenpay: %1$s, request ID %2$s."
+msgstr ""
+
+#: src/Gateway/IfthenpayPayment.php:224
+msgid "unknown method"
+msgstr ""
+
+#. translators: Tutor passes this through a URL, which drops apostrophes and cuts at "#".
+#: src/Gateway/IfthenpayPayment.php:291
+msgid "We could not start your ifthenpay payment. Please try again in a moment, or choose another payment method."
+msgstr ""
+
+#: src/Methods.php:28
+msgid "Multibanco"
+msgstr ""
+
+#: src/Methods.php:29
+msgid "MB WAY"
+msgstr ""
+
+#: src/Methods.php:30
+msgid "Payshop"
+msgstr ""
+
+#: src/Methods.php:31
+msgid "Credit card"
+msgstr ""
+
+#: src/Methods.php:32
+msgid "Cofidis Pay"
+msgstr ""
+
+#: src/Methods.php:33
+msgid "Google Pay"
+msgstr ""
+
+#: src/Methods.php:34
+msgid "Apple Pay"
+msgstr ""
+
+#: src/Methods.php:35
+msgid "Pix"
+msgstr ""
+
+#: src/Methods.php:36
+msgid "Bizum"
+msgstr ""
+
+#. translators: %s: payment method, e.g. "MB WAY".
+#: src/Orders/OrderDisplay.php:74
+#, php-format
+msgid "ifthenpay · %s"
+msgstr ""
+
+#: src/Orders/OrderDisplay.php:99
+msgid "Thank you! We are waiting for ifthenpay to confirm your payment, and your course access opens as soon as it does. If you chose Multibanco or Payshop, that happens once you pay the reference."
+msgstr ""
+
+#: src/Settings/SettingsRepository.php:131
+msgid "Course purchase"
+msgstr ""
